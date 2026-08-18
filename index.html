@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEPUP | Modern Shoes Store</title>
+    <meta
+      name="description"
+      content="STEPUP offers premium sneakers and everyday shoes for style, comfort, and confidence."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo" aria-label="STEPUP home">
+          <span class="logo-mark">S</span>
+          <span class="logo-word"><span>STEP</span>UP</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+
+          <div class="nav-icons">
+            <a href="shop.html" class="icon-btn" aria-label="Search products">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="shop.html" class="icon-btn favorite-link" aria-label="Favorites">
+              <i class="fas fa-heart"></i>
+              <span class="count-badge favorite-count">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn cart-link" aria-label="Shopping cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="count-badge cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="eyebrow">Fresh arrivals</span>
+            <h1>Step Into Your Style</h1>
+            <p>
+              Discover premium sneakers and shoes designed for comfort, style, and everyday life.
+            </p>
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-primary">Shop Now</a>
+              <a href="#collection" class="btn btn-secondary">Explore Collection</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>20k+</strong>
+                <span>Happy customers</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Average rating</span>
+              </div>
+              <div>
+                <strong>48h</strong>
+                <span>Fast delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-badge hero-badge-top">New season</div>
+            <div class="hero-badge hero-badge-bottom">Up to 40% off</div>
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80"
+              alt="Premium running shoe"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="features container section-space">
+        <div class="feature-card">
+          <i class="fas fa-truck"></i>
+          <div>
+            <h3>Free shipping</h3>
+            <p>On orders over $80</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <h3>Secure payment</h3>
+            <p>Protected checkout</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-undo-alt"></i>
+          <div>
+            <h3>Easy returns</h3>
+            <p>30-day hassle-free</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="collection" class="container section-space">
+        <div class="section-heading">
+          <span class="eyebrow">Top picks</span>
+          <h2>Featured products</h2>
+        </div>
+        <div class="product-grid featured-grid" id="home-featured"></div>
+      </section>
+
+      <section class="promo-banner container section-space">
+        <div class="promo-content">
+          <span class="eyebrow alt">Weekend offer</span>
+          <h2>Upgrade your everyday fit</h2>
+          <p>Enjoy exclusive savings on premium performance and lifestyle sneakers.</p>
+        </div>
+        <a href="shop.html" class="btn btn-primary">Shop the deal</a>
+      </section>
+
+      <section class="container section-space">
+        <div class="section-heading">
+          <span class="eyebrow">Latest arrivals</span>
+          <h2>New collection</h2>
+        </div>
+        <div class="product-grid new-arrivals-grid" id="home-new-arrivals"></div>
+      </section>
+
+      <section class="container section-space">
+        <div class="section-heading">
+          <span class="eyebrow">Best sellers</span>
+          <h2>Most loved by customers</h2>
+        </div>
+        <div class="product-grid best-sellers-grid" id="home-best-sellers"></div>
+      </section>
+
+      <section class="testimonials section-space">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Reviews</span>
+            <h2>What our customers say</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                “The comfort is unreal. I wear them daily for work, travel, and weekends.”
+              </p>
+              <div class="customer">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Customer portrait" />
+                <div>
+                  <strong>Amelia K.</strong>
+                  <span>Verified buyer</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                “Premium feel, sleek look, and excellent quality. STEPUP nailed the design.”
+              </p>
+              <div class="customer">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Customer portrait" />
+                <div>
+                  <strong>Marcus T.</strong>
+                  <span>Runner</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                “Fast shipping and stylish sneakers that feel as good as they look.”
+              </p>
+              <div class="customer">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=300&q=80" alt="Customer portrait" />
+                <div>
+                  <strong>Sophia L.</strong>
+                  <span>Fashion lover</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter container section-space">
+        <div class="newsletter-content">
+          <div>
+            <span class="eyebrow">Stay updated</span>
+            <h2>Join our newsletter</h2>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span>STEP</span>UP
+          </a>
+          <p>
+            Modern sneakers and everyday essentials designed for motion, comfort, and confidence.
+          </p>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="shop.html">New arrivals</a></li>
+            <li><a href="shop.html">Best sellers</a></li>
+            <li><a href="shop.html">Running</a></li>
+            <li><a href="shop.html">Lifestyle</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 STEPUP. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

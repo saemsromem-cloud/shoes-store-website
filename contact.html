@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | STEPUP</title>
+    <meta name="description" content="Get in touch with STEPUP for support, store information, and questions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo" aria-label="STEPUP home">
+          <span class="logo-mark">S</span>
+          <span class="logo-word"><span>STEP</span>UP</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+
+          <div class="nav-icons">
+            <a href="shop.html" class="icon-btn" aria-label="Search products">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="shop.html" class="icon-btn favorite-link" aria-label="Favorites">
+              <i class="fas fa-heart"></i>
+              <span class="count-badge favorite-count">0</span>
+            </a>
+            <a href="cart.html" class="icon-btn cart-link" aria-label="Shopping cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="count-badge cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-banner contact-banner">
+        <div class="container banner-text">
+          <span class="eyebrow">Get in touch</span>
+          <h1>Contact us</h1>
+        </div>
+      </section>
+
+      <section class="container contact-section section-space">
+        <div class="contact-card form-card">
+          <h2>Send us a message</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field-group">
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" />
+                <small class="error-message" id="nameError"></small>
+              </div>
+              <div class="field-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" />
+                <small class="error-message" id="emailError"></small>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" />
+              <small class="error-message" id="phoneError"></small>
+            </div>
+
+            <div class="field-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help"></textarea>
+              <small class="error-message" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="success-message" id="formSuccess"></p>
+          </form>
+        </div>
+
+        <div class="contact-card info-card">
+          <h2>Store information</h2>
+          <div class="contact-info-list">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>245 Fashion Avenue, New York, NY 10001</p>
+              </div>
+            </div>
+            <div>
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+1 (212) 555-0134</p>
+              </div>
+            </div>
+            <div>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>hello@stepupstore.com</p>
+              </div>
+            </div>
+            <div>
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Opening hours</h3>
+                <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links large-icons">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span>STEP</span>UP
+          </a>
+          <p>
+            Shoes made to keep up with your pace and your lifestyle.
+          </p>
+        </div>
+        <div>
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 STEPUP. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
